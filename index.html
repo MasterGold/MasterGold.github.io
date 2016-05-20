@@ -102,6 +102,1095 @@ starteffect()
 <!-- Search Google -->
 <a target="_blank" href="http://abninjaranger.ir" style="text-decoration:none;bottom:0;left:10px;font-size:5pt;color:gray;position:absolute">?????? ????</a><a target="_blank" href="http://www.htmlfreecodes.com" style="font-size: 8pt; text-decoration: none">Html Codes</a>
 </div>
+
+<div id="loginBar">
+<div class="pageWidth">
+<div class="pageContent">
+<h3 id="loginBarHandle">
+<label for="LoginControl"><a href="login/" class="concealed noOutline">Log in or Sign up</a></label>
+</h3>
+<span class="helper"></span>
+<form action="login/login" method="post" class="xenForm " id="login" style="display:none">
+<div class="ctrlWrapper">
+<dl class="ctrlUnit">
+<dt><label for="LoginControl">Your name or email address:</label></dt>
+<dd><input type="text" name="login" id="LoginControl" class="textCtrl" tabindex="101"></dd>
+</dl>
+<dl class="ctrlUnit">
+<dt>
+<label for="ctrl_password">Do you already have an account?</label>
+</dt>
+<dd>
+<ul>
+<li><label for="ctrl_not_registered"><input type="radio" name="register" value="1" id="ctrl_not_registered" tabindex="105">
+No, create an account now.</label></li>
+<li><label for="ctrl_registered"><input type="radio" name="register" value="0" id="ctrl_registered" tabindex="105" checked="checked" class="Disabler">
+Yes, my password is:</label></li>
+<li id="ctrl_registered_Disabler">
+<input type="password" name="password" class="textCtrl" id="ctrl_password" tabindex="102">
+<div class="lostPassword"><a href="lost-password/" class="OverlayTrigger OverlayCloser" tabindex="106">Forgot your password?</a></div>
+</li>
+</ul>
+</dd>
+</dl>
+<dl class="ctrlUnit submitUnit">
+<dt></dt>
+<dd>
+<input type="submit" class="button primary" value="Log in" tabindex="104" data-loginphrase="Log in" data-signupphrase="Sign up">
+<label for="ctrl_remember" class="rememberPassword"><input type="checkbox" name="remember" value="1" id="ctrl_remember" tabindex="103"> Stay logged in</label>
+</dd>
+</dl>
+</div>
+<input type="hidden" name="cookie_check" value="1">
+<input type="hidden" name="redirect" value="/community/">
+<input type="hidden" name="_xfToken" value="">
+</form></div>
+</div>
+</div>
+<header>
+<div id="header">
+<div id="logoBlock">
+<div class="pageWidth">
+<div class="pageContent">
+<div id="logo"><a href="http://desteria.com/community/">
+<span></span>
+<img src="styles/flexile-dark/flexile/logo.png" alt="">
+</a></div>
+<div id="flexile_header_content">
+Connect to Desteria with IP: <b>pvp.Desteria.com</b><br>
+Our server guide: <a href="/guide.php" style="color:rgb(120, 233, 59)">Click Here</a>
+</div>
+<span class="helper"></span>
+</div>
+</div>
+</div>
+<div id="navigation" class="withSearch">
+<div class="pageContent">
+<nav>
+<div class="navTabs pageWidth">
+<ul class="publicTabs">
+ 
+ 
+<li class="navTab portal selected">
+<a href="http://desteria.com/community/" class="navLink">Home</a>
+<a href="http://desteria.com/community/" class="SplitCtrl" rel="Menu"></a>
+<div class="tabLinks portalTabLinks">
+<div class="pageWidth">
+<div class="primaryContent menuHeader">
+<h3>Home</h3>
+<div class="muted">Quick Links</div>
+</div>
+<ul class="secondaryContent blockLinksList">
+<li><a href="recent-activity/">Recent Activity</a></li>
+<li><a href="find-new/threads">What's New?</a></li>
+<li><a href="help/">Help</a></li>
+</ul>
+</div>
+</div>
+</li>
+ 
+<li class="navTab forums Popup PopupControl PopupClosed PopupContainerControl">
+<a href="http://desteria.com/community/forums/" class="navLink">Forums</a>
+<a href="http://desteria.com/community/forums/" class="SplitCtrl" rel="Menu"></a>
+
+</li>
+ 
+<li class="navTab PopupClosed"><a href="http://desteria.com/community/index.php?threads/featured-%E2%9D%8A-rules-regulations-and-faqs-%E2%9D%8A.2118/" class="navLink">Server Rules</a></li>
+ 
+<li class="navTab PopupClosed"><a href="http://store.desteria.com" class="navLink">Shop</a></li>
+ 
+<li class="navTab xfx_staff Popup PopupControl PopupClosed PopupContainerControl">
+<a href="XenStaff/" class="navLink">Staff</a>
+<a href="XenStaff/" class="SplitCtrl" rel="Menu"></a>
+
+</li>
+ 
+<li class="navTab PopupClosed"><a href="/Desteria.zip" class="navLink">Texture Pack</a></li>
+ 
+ 
+ 
+<li class="navTab navigationHiddenTabs Popup PopupControl PopupClosed PopupContainerControl" style="display: none;">
+<a rel="Menu" class="navLink NoPopupGadget"><span class="menuIcon">Menu</span></a>
+
+</li>
+ 
+</ul>
+</div>
+<span class="helper"></span>
+</nav>
+</div>
+</div>
+<div id="searchBar" class="pageWidth">
+<span id="QuickSearchPlaceholder" title="Search">Search</span>
+<fieldset id="QuickSearch">
+<form action="search/search" method="post" class="formPopup">
+<div class="primaryControls">
+ 
+<input type="search" name="keywords" value="" class="textCtrl" placeholder="Search..." title="Enter your search and hit enter" id="QuickSearchQuery">
+ 
+</div>
+<div class="secondaryControls">
+<div class="controlsWrapper">
+ 
+<dl class="ctrlUnit">
+<dt></dt>
+<dd><ul>
+<li><label><input type="checkbox" name="title_only" value="1" id="search_bar_title_only" class="AutoChecker" data-uncheck="#search_bar_thread"> Search titles only</label></li>
+</ul></dd>
+</dl>
+<dl class="ctrlUnit">
+<dt><label for="searchBar_users">Posted by Member:</label></dt>
+<dd>
+<input type="text" name="users" value="" class="textCtrl AutoComplete" id="searchBar_users" autocomplete="off">
+<p class="explain">Separate names with a comma.</p>
+</dd>
+</dl>
+<dl class="ctrlUnit">
+<dt><label for="searchBar_date">Newer Than:</label></dt>
+<dd><input type="text" data-orig-type="date" name="date" value="" class="textCtrl date" id="searchBar_date"></dd>
+</dl>
+</div>
+ 
+<dl class="ctrlUnit submitUnit">
+<dt></dt>
+<dd>
+<input type="submit" value="Search" class="button primary Tooltip">
+<div class="Popup" id="commonSearches">
+<a rel="Menu" class="button NoPopupGadget Tooltip PopupControl" data-tipclass="flipped"><span class="arrowWidget"></span></a>
+
+</div>
+<a href="search/" class="button moreOptions Tooltip">More...</a>
+</dd>
+</dl>
+</div>
+<input type="hidden" name="_xfToken" value="">
+</form>
+</fieldset>
+</div>
+</div>
+</header>
+<div id="headerMover">
+<div id="content" class="EWRporta_Portal">
+<div class="pageWidth">
+<div class="pageContent">
+ 
+<div class="mainContainer">
+<div class="mainContent">
+<div class="breadBoxTop ">
+<nav>
+<fieldset class="breadcrumb" style="">
+<a href="misc/quick-navigation-menu?selected=portal" class="OverlayTrigger jumpMenuTrigger" data-cacheoverlay="true" title="Open quick navigation"> </a>
+<div class="boardTitle"><strong></strong></div>
+<span class="crumbs">
+<span class="crust selectedTabCrumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="http://desteria.com/community/" class="crumb" rel="up" itemprop="url"><span itemprop="title">Home</span></a>
+<span class="arrow"><span>&gt;</span></span>
+</span>
+</span>
+</fieldset>
+</nav>
+</div>
+<!--[if lt IE 8]>
+							<p class="importantMessage">You are using an out of date browser. It  may not display this or other websites correctly.<br />You should upgrade or use an <a href="https://www.google.com/chrome/browser/" target="_blank">alternative browser</a>.</p>
+						<![endif]-->
+ 
+<div class="midRightBlocks ">
+<div id="recentNews">
+<div class="section sectionMain recentNews" id="62022">
+<div class="primaryContent leftDate">
+<div class="subHeading">
+<div style="float: right; white-space: nowrap;">
+<a href="threads/62022/"><span class="DateTime" title="May 6, 2016 at 10:34 AM">May 6, 2016</span></a>
+</div>
+<h2><a href="threads/62022/" class="newsTitle">Huge 65% Sale and EULA dates!</a></h2>
+</div>
+<div class="newsDate secondaryContent">
+<div class="newsMonth heading">May</div>
+<div class="newsDay">06</div>
+</div>
+<div class="messageUserBlock">
+<div class="avatarHolder">
+<a href="threads/62022/"><img src="http://2.bp.blogspot.com/-8JwamUeGx1k/UTOyyp6b1GI/AAAAAAAAGpM/cLcbcTH9O9Y/s1600/JLP2013+-+POST+DIVIDER.png" alt="http://2.bp.blogspot.com/-8JwamUeGx1k/UTOyyp6b1GI/AAAAAAAAGpM/cLcbcTH9O9Y/s1600/JLP2013+-+POST+DIVIDER.png" style="max-height: 150px; max-width: 150px;"></a>
+</div>
+</div>
+<div class="messageContent baseHtml">
+<div class="postedBy">
+<span class="posted iconKey"><div class="sticky"></div>by <a href="members/18778/" class="username">Eraze</a> at <a href="threads/62022/">10:34 AM</a></span>
+<span class="views">(1,575 Views / 7 Likes)</span>
+<span class="comments iconKey"><div class="new"></div><a href="threads/62022/unread">84 Comments</a></span>
+</div>
+<div class="newsText"><b><span style="font-size: 22px"><br>
+EULA Sale: 65% OFF!</span></b><br>
+I hope you are all ready for this, because I am more than happy to announce Desteria's<span style="color: #ffff4d"> largest sale</span> in history! Since the beginning of Desteria, a sale like this has never come around, and it is very likely that something like this will never happen again! With the EULA right around the corner, we are giving everyone a very last chance to gain permanent access to awesome features that won't be available very soon! The EULA will officially begin to take place on <span style="color: #ffff4d">Friday the 13th</span> of this month, and that's exactly when this sale will be finishing! We have no specific details on what will be coming to the store very soon, we want you to wait and see! Other than that, please take advantage of this amazing sale, and show your support to Desteria, so we can continue development and get these updates out sooner!<br>
+<br>
+<img src="http://img.prntscr.com/img?url=http://i.imgur.com/YAbjot9.jpg" class="bbCodeImage LbImage" alt="[&#8203;IMG]" data-url="http://img.prntscr.com/img?url=http://i.imgur.com/YAbjot9.jpg" style=""></div>
+<div class="clearFix"></div>
+</div>
+<div class="sectionFooter">
+<div class="categories">
+<ul>
+</ul>
+</div>
+<div class="continue">
+<a class="iconKey button" href="threads/62022/">
+<div class="redirect"></div>
+Continue reading...
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="section sectionMain recentNews" id="61662">
+<div class="primaryContent leftDate">
+<div class="subHeading">
+<div style="float: right; white-space: nowrap;">
+<a href="threads/61662/"><span class="DateTime" title="May 1, 2016 at 7:30 AM">May 1, 2016</span></a>
+</div>
+<h2><a href="threads/61662/" class="newsTitle">EULA Update, Judgement Day, and Monthly Winners!</a></h2>
+</div>
+<div class="newsDate secondaryContent">
+<div class="newsMonth heading">May</div>
+<div class="newsDay">01</div>
+</div>
+<div class="messageUserBlock">
+<div class="avatarHolder">
+<a href="threads/61662/"><img src="http://2.bp.blogspot.com/-8JwamUeGx1k/UTOyyp6b1GI/AAAAAAAAGpM/cLcbcTH9O9Y/s1600/JLP2013+-+POST+DIVIDER.png" alt="http://2.bp.blogspot.com/-8JwamUeGx1k/UTOyyp6b1GI/AAAAAAAAGpM/cLcbcTH9O9Y/s1600/JLP2013+-+POST+DIVIDER.png" style="max-height: 150px; max-width: 150px;"></a>
+</div>
+</div>
+<div class="messageContent baseHtml">
+<div class="postedBy">
+<span class="posted iconKey"><div class="sticky"></div>by <a href="members/18778/" class="username">Eraze</a> at <a href="threads/61662/">7:30 AM</a></span>
+<span class="views">(1,527 Views / 3 Likes)</span>
+<span class="comments iconKey"><div class="new"></div><a href="threads/61662/unread">82 Comments</a></span>
+</div>
+<div class="newsText"><br>
+<b><i><span style="text-decoration: underline"><span style="font-size: 22px">Judgement Day: May</span></span></i></b><br>
+As we wave goodbye to another lovely month, we welcome many new, wonderful things! A warm congratulations to all the members that were accepted in this months Judgement Day, we know you will do great! Please make them all feel welcome, and make sure you send your best wishes to them - to help them begin their journey! Please also remember to send in an application if you also wish to join our great team - we're always looking for new recruits! For an official list of users who made it in this wave, be sure to check this link: <b><span style="color: #59b300"><a href="http://desteria.com/community/threads/61640/" class="internalLink">HERE</a></span></b><br>
+<br>
+<img src="http://i.imgur.com/RQyujQd.jpg" class="bbCodeImage LbImage" alt="[&#8203;IMG]" data-url="http://i.imgur.com/RQyujQd.jpg" style=""> <br>
+<br>
+<b><i><span style="text-decoration: underline"><span style="font-size: 22px">March Voting Winners</span></span></i></b><br>
+And of course, as with every new month's arrival, a huge congratulations to all the voting champs who've kept our server solidly at the top. Thanks for your dedication! Voting rewards will be...</div>
+<div class="clearFix"></div>
+</div>
+<div class="sectionFooter">
+<div class="categories">
+<ul>
+</ul>
+</div>
+<div class="continue">
+<a class="iconKey button" href="threads/61662/">
+<div class="redirect"></div>
+Continue reading...
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="section sectionMain recentNews" id="61047">
+<div class="primaryContent leftDate">
+<div class="subHeading">
+<div style="float: right; white-space: nowrap;">
+<a href="threads/61047/"><span class="DateTime" title="Apr 24, 2016 at 8:13 AM">Apr 24, 2016</span></a>
+</div>
+<h2><a href="threads/61047/" class="newsTitle">Creeper Eggs, Server Improvements, Twitter Leaks and More!</a></h2>
+</div>
+<div class="newsDate secondaryContent">
+<div class="newsMonth heading">Apr</div>
+<div class="newsDay">24</div>
+</div>
+<div class="messageUserBlock">
+<div class="avatarHolder">
+<a href="threads/61047/"><img src="http://2.bp.blogspot.com/-8JwamUeGx1k/UTOyyp6b1GI/AAAAAAAAGpM/cLcbcTH9O9Y/s1600/JLP2013+-+POST+DIVIDER.png" alt="http://2.bp.blogspot.com/-8JwamUeGx1k/UTOyyp6b1GI/AAAAAAAAGpM/cLcbcTH9O9Y/s1600/JLP2013+-+POST+DIVIDER.png" style="max-height: 150px; max-width: 150px;"></a>
+</div>
+</div>
+<div class="messageContent baseHtml">
+<div class="postedBy">
+<span class="posted iconKey"><div class="sticky"></div>by <a href="members/18778/" class="username">Eraze</a> at <a href="threads/61047/">8:13 AM</a></span>
+<span class="views">(2,717 Views / 6 Likes)</span>
+<span class="comments iconKey"><div class="new"></div><a href="threads/61047/unread">176 Comments</a></span>
+</div>
+<div class="newsText"><br>
+<b><i><span style="text-decoration: underline"><span style="font-size: 22px">Creeper Eggs and Unlocked Chests</span></span></i></b><br>
+The wait is up everyone, the time has come! We are extremely excited to announce that Creeper Eggs, and Unlocked Chests will officially be available very soon! After months of thought and hundreds of community suggestions, we have come to the conclusion that these are two of the many changes Desteria needs in-order to continue to succeed, and appeal to the Factions player-base! Creeper eggs will be sold in the Token shop for 75 Tokens each, and all chests will be open within Faction land, even if it is an enemy Faction! These changes will take effect in two days, on the 26th of April - This should give everyone a chance to adapt to the changes, and prepare their bases for mayhem! For an official countdown regarding these changes, click <b><span style="color: #59b300"><a href="http://itsalmo.st/#desteriaupdate" target="_blank" class="externalLink" rel="nofollow">HERE</a></span></b>.<br>
+<br>
+<img src="http://i.imgur.com/ooRZpHb.jpg" class="bbCodeImage LbImage" alt="[&#8203;IMG]" data-url="http://i.imgur.com/ooRZpHb.jpg" style=""> <br>
+<br>
+<b><i><span style="text-decoration: underline"><span style="font-size: 22px">EULA...</span></span></i></b></div>
+<div class="clearFix"></div>
+</div>
+<div class="sectionFooter">
+<div class="categories">
+<ul>
+</ul>
+</div>
+<div class="continue">
+<a class="iconKey button" href="threads/61047/">
+<div class="redirect"></div>
+Continue reading...
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="section sectionMain recentNews" id="59328">
+<div class="primaryContent leftDate">
+<div class="subHeading">
+<div style="float: right; white-space: nowrap;">
+<a href="threads/59328/"><span class="DateTime" title="Apr 1, 2016 at 4:43 AM">Apr 1, 2016</span></a>
+</div>
+<h2><a href="threads/59328/" class="newsTitle">Judgement Day, Voting Winners, FFA Champions, and Maintainence Notice!</a></h2>
+</div>
+<div class="newsDate secondaryContent">
+<div class="newsMonth heading">Apr</div>
+<div class="newsDay">01</div>
+</div>
+<div class="messageUserBlock">
+<div class="avatarHolder">
+<a href="threads/59328/"><img src="http://2.bp.blogspot.com/-8JwamUeGx1k/UTOyyp6b1GI/AAAAAAAAGpM/cLcbcTH9O9Y/s1600/JLP2013+-+POST+DIVIDER.png" alt="http://2.bp.blogspot.com/-8JwamUeGx1k/UTOyyp6b1GI/AAAAAAAAGpM/cLcbcTH9O9Y/s1600/JLP2013+-+POST+DIVIDER.png" style="max-height: 150px; max-width: 150px;"></a>
+</div>
+</div>
+<div class="messageContent baseHtml">
+<div class="postedBy">
+<span class="posted iconKey"><div class="sticky"></div>by <a href="members/31/" class="username">Annie</a> at <a href="threads/59328/">4:43 AM</a></span>
+<span class="views">(3,634 Views / 9 Likes)</span>
+<span class="comments iconKey"><div class="new"></div><a href="threads/59328/unread">219 Comments</a></span>
+</div>
+<div class="newsText"><br>
+<b><i><span style="text-decoration: underline"><span style="font-size: 22px">Judgement Day: April</span></span></i></b><br>
+With the dawn of every month come new beginnings - and quite a few of them, this month! A huge congratulations to all the new members of our team, and I sincerely hope that each of them get to experience the team as intended - a wonderful experience in which new relationships are forged. Once more, let's give them a huge congratulations, and aid them in the huge learning process that is becoming a staff member of our forests! To see exactly who made it in this wave, check out this link: <b><a href="http://desteria.com/community/threads/59291/" class="internalLink">HERE</a></b><br>
+<br>
+<span style="text-decoration: underline"><i><img src="https://i.gyazo.com/da25cd65ea517b0b9891c78c5848b694.png" class="bbCodeImage LbImage" alt="[&#8203;IMG]" data-url="https://i.gyazo.com/da25cd65ea517b0b9891c78c5848b694.png" style=""></i></span><br>
+<br>
+<b><i><span style="text-decoration: underline"><span style="font-size: 22px">March Voting Winners</span></span></i></b><br>
+And of course, as with every new month's arrival, a huge congratulations to all the voting champs who've kept our server solidly at the top. Thanks for your dedication! Voting rewards will be sent out over the...</div>
+<div class="clearFix"></div>
+</div>
+<div class="sectionFooter">
+<div class="categories">
+<ul>
+</ul>
+</div>
+<div class="continue">
+<a class="iconKey button" href="threads/59328/">
+<div class="redirect"></div>
+Continue reading...
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="section sectionMain recentNews" id="58801">
+<div class="primaryContent leftDate">
+<div class="subHeading">
+<div style="float: right; white-space: nowrap;">
+<a href="threads/58801/"><span class="DateTime" title="Mar 25, 2016 at 10:42 PM">Mar 25, 2016</span></a>
+</div>
+<h2><a href="threads/58801/" class="newsTitle">EULA Compliance, Easter Celebrations And 55% Sale!</a></h2>
+</div>
+<div class="newsDate secondaryContent">
+<div class="newsMonth heading">Mar</div>
+<div class="newsDay">25</div>
+</div>
+<div class="messageUserBlock">
+<div class="avatarHolder">
+<a href="threads/58801/"><img src="http://2.bp.blogspot.com/-8JwamUeGx1k/UTOyyp6b1GI/AAAAAAAAGpM/cLcbcTH9O9Y/s1600/JLP2013+-+POST+DIVIDER.png" alt="http://2.bp.blogspot.com/-8JwamUeGx1k/UTOyyp6b1GI/AAAAAAAAGpM/cLcbcTH9O9Y/s1600/JLP2013+-+POST+DIVIDER.png" style="max-height: 150px; max-width: 150px;"></a>
+</div>
+</div>
+<div class="messageContent baseHtml">
+<div class="postedBy">
+<span class="posted iconKey"><div class="sticky"></div>by <a href="members/18778/" class="username">Eraze</a> at <a href="threads/58801/">10:42 PM</a></span>
+<span class="views">(3,082 Views / 3 Likes)</span>
+<span class="comments iconKey"><div class="new"></div><a href="threads/58801/unread">146 Comments</a></span>
+</div>
+<div class="newsText"><i><b><span style="text-decoration: underline"><span style="font-size: 22px"><br>
+55% Easter Sale</span></span></b></i><br>
+Did someone say.. Sale? With Easter occurring this weekend, we'll be having our LAST big sale for a while. It's time to pull out your wallets, and purchase the items you have been waiting for! The <span style="color: #ffff00">55% sale</span> will kick in <span style="color: #ffff00">Friday, March 25th</span> and will last until the weekend.. all the way to <span style="color: #ffff00">Monday, March 28th</span>. Please keep in mind that with the EULA coming up, we will no longer be selling a lot of the OP items that are on our store, so get them before nobody else can! <span style="color: #ffff00">You will keep these items after the EULA comes!<br>
+<br>
+<img src="http://i.imgur.com/xRKTSdp.jpg" class="bbCodeImage LbImage" alt="[&#8203;IMG]" data-url="http://i.imgur.com/xRKTSdp.jpg" style=""> </span><br>
+<br>
+<i><b><span style="font-size: 22px"><span style="text-decoration: underline">EULA Compliance</span></span></b></i><br>
+Recently, we have been in contact with the team over at Mojang, discussing the future of Desteria's store, and in particular, the EULA. If you aren't aware, the EULA is essentially a set of rules made by Mojang, saying that Minecraft...</div>
+<div class="clearFix"></div>
+</div>
+<div class="sectionFooter">
+<div class="categories">
+<ul>
+</ul>
+</div>
+<div class="continue">
+<a class="iconKey button" href="threads/58801/">
+<div class="redirect"></div>
+Continue reading...
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="section sectionMain recentNews" id="58549">
+<div class="primaryContent leftDate">
+<div class="subHeading">
+<div style="float: right; white-space: nowrap;">
+<a href="threads/58549/"><span class="DateTime" title="Mar 22, 2016 at 6:48 PM">Mar 22, 2016</span></a>
+</div>
+<h2><a href="threads/58549/" class="newsTitle">Desteria, it's time for my break.</a></h2>
+</div>
+<div class="newsDate secondaryContent">
+<div class="newsMonth heading">Mar</div>
+<div class="newsDay">22</div>
+</div>
+<div class="messageUserBlock">
+<div class="avatarHolder">
+<a href="threads/58549/"><img src="http://2.bp.blogspot.com/-8JwamUeGx1k/UTOyyp6b1GI/AAAAAAAAGpM/cLcbcTH9O9Y/s1600/JLP2013+-+POST+DIVIDER.png" alt="http://2.bp.blogspot.com/-8JwamUeGx1k/UTOyyp6b1GI/AAAAAAAAGpM/cLcbcTH9O9Y/s1600/JLP2013+-+POST+DIVIDER.png" style="max-height: 150px; max-width: 150px;"></a>
+</div>
+</div>
+<div class="messageContent baseHtml">
+<div class="postedBy">
+<span class="posted iconKey"><div class="sticky"></div>by <a href="members/1/" class="username">Ambushment</a> at <a href="threads/58549/">6:48 PM</a></span>
+<span class="views">(5,508 Views / 8 Likes)</span>
+<span class="comments iconKey"><div class="new"></div><a href="threads/58549/unread">265 Comments</a></span>
+</div>
+<div class="newsText"><b><i><span style="font-size: 22px">Ambushment's Goodbye</span></i></b><br>
+<br>
+During my time on Desteria I would have never imagined myself writing a post like this- ever. Few weeks ago due to one of my close family members becoming very ill, I took a few days off. During my time off I realized something very significant that was detrimental to my position on Desteria.<br>
+<br>
+I’ve been doing this for 3 years now and I’ve loved every single moment of it. Despite all of the issues I’ve ran into running a network of such magnitude, I can honestly say I enjoyed those caffeinated all-nighters and our entire network shitting itself at the most random times. Being the network owner, I lived for those moments. However, despite the crazy nights and amazing journey, 3 years is a very long time. I’ve been tied into managing Desteria for so long because it was my passion and after 3 years I think it’s evident that I deserve a break; I’m worn out and I’ve lost connection with the other side of me.<br>
+<br>
+I’ll be stepping down from...</div>
+<div class="clearFix"></div>
+</div>
+<div class="sectionFooter">
+<div class="categories">
+<ul>
+</ul>
+</div>
+<div class="continue">
+<a class="iconKey button" href="threads/58549/">
+<div class="redirect"></div>
+Continue reading...
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="section sectionMain">
+<div class="PageNav" data-page="1" data-range="2" data-start="2" data-end="5" data-last="6" data-sentinel="{{sentinel}}" data-baseurl="articles/?page=%7B%7Bsentinel%7D%7D">
+<span class="pageNavHeader">Page 1 of 6</span>
+<nav>
+<a href="articles/" class="currentPage " rel="start">1</a>
+<a href="articles/?page=2" class="">2</a>
+<a href="articles/?page=3" class="">3</a>
+<a href="articles/?page=4" class="">4</a>
+<a href="articles/?page=5" class="">5</a>
+<a href="articles/?page=6" class="">6</a>
+<a href="articles/?page=2" class="text">Next &gt;</a>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class="portaCopy copyright muted">
+<a href="http://xenforo.com/community/resources/90/">XenPorta</a>
+© Jason Axelrod from <a href="http://8wayrun.com/">8WAYRUN.COM</a>
+</div>
+ 
+
+</div>
+</div>
+ 
+<aside>
+<div class="sidebar">
+<div class="section loginButton">
+<div class="secondaryContent">
+<label for="LoginControl" id="SignupButton"><a href="login/" class="inner">Sign up now!</a></label>
+</div>
+</div>
+<div class="section">
+<div class="secondaryContent" id="twitter">
+<h3>Twitter Feed</h3>
+<a class="twitter-timeline" href="http://twitter.com" height="290" data-dnt="true" data-theme="dark" data-widget-id="541705697696948224" data-related="DesteriaMC" data-chrome="noscrollbar noheader nofooter noborders transparent">
+Twitter Feed
+</a>
+</div>
+</div>
+<div class="section avatarList threadList">
+<div class="secondaryContent" id="recentThreads">
+<h3>Recent Threads</h3>
+<ol class="discussionListItems">
+<li id="thread-62989" class="visible  " data-author="KraftTristann">
+<a href="members/23074/" class="avatar Av23074s" data-avatarhtml="true"><img src="data/avatars/s/23/23074.jpg?1459629376" width="48" height="48" alt="KraftTristann"></a>
+<div class="title">
+<a href="threads/62989/" title="" class="PreviewTooltip" data-previewurl="threads/62989/preview">Tristann's Quitting Thread till 7.0</a>
+</div>
+<div class="muted">
+<a href="members/19008/">Sufficient</a> @
+<a class="dateTime"><abbr class="DateTime" data-time="1463747751" data-diff="38" data-datestring="May 20, 2016" data-timestring="7:35 AM" title="May 20, 2016 at 7:35 AM">5 minutes ago</abbr></a>
+</div>
+</li>
+<li id="thread-62978" class="visible  " data-author="Simba">
+<a href="members/12911/" class="avatar Av12911s" data-avatarhtml="true"><img src="data/avatars/s/12/12911.jpg?1462944854" width="48" height="48" alt="Simba"></a>
+<div class="title">
+<a href="threads/62978/" title="" class="PreviewTooltip" data-previewurl="threads/62978/preview">❤ Farewell Nerds ❤</a>
+</div>
+<div class="muted">
+<a href="members/24759/">smoothaimbot</a> @
+<a class="dateTime"><abbr class="DateTime" data-time="1463747228" data-diff="561" data-datestring="May 20, 2016" data-timestring="7:27 AM" title="May 20, 2016 at 7:27 AM">14 minutes ago</abbr></a>
+</div>
+</li>
+<li id="thread-62931" class="visible  " data-author="hoodrat">
+<a href="members/17161/" class="avatar Av17161s" data-avatarhtml="true"><img src="data/avatars/s/17/17161.jpg?1463370330" width="48" height="48" alt="hoodrat"></a>
+<div class="title">
+<a href="threads/62931/" title="" class="PreviewTooltip" data-previewurl="threads/62931/preview">roast the person above you</a>
+</div>
+<div class="muted">
+<a href="members/19861/">Elrak</a> @
+<a class="dateTime"><abbr class="DateTime" data-time="1463747117" data-diff="672" data-datestring="May 20, 2016" data-timestring="7:25 AM" title="May 20, 2016 at 7:25 AM">16 minutes ago</abbr></a>
+</div>
+</li>
+<li id="thread-62986" class="visible  " data-author="Halee">
+<a href="members/25485/" class="avatar Av25485s" data-avatarhtml="true"><img src="data/avatars/s/25/25485.jpg?1463630225" width="48" height="48" alt="Halee"></a>
+<div class="title">
+<a href="threads/62986/" title="" class="PreviewTooltip" data-previewurl="threads/62986/preview">Booty TS</a>
+</div>
+<div class="muted">
+<a href="members/19008/">Sufficient</a> @
+<a class="dateTime"><abbr class="DateTime" data-time="1463746602" data-diff="1187" data-datestring="May 20, 2016" data-timestring="7:16 AM" title="May 20, 2016 at 7:16 AM">24 minutes ago</abbr></a>
+</div>
+</li>
+<li id="thread-62977" class="visible  " data-author="Chris">
+<a href="members/21260/" class="avatar Av21260s" data-avatarhtml="true"><img src="data/avatars/s/21/21260.jpg?1458233604" width="48" height="48" alt="Chris"></a>
+<div class="title">
+<a href="threads/62977/" title="" class="PreviewTooltip" data-previewurl="threads/62977/preview">Fortiis/jellomaker's end .-. ; -; :C :( D:</a>
+</div>
+<div class="muted">
+<a href="members/1063/">MrKizza</a> @
+<a class="dateTime"><abbr class="DateTime" data-time="1463745125" data-diff="2664" data-datestring="May 20, 2016" data-timestring="6:52 AM" title="May 20, 2016 at 6:52 AM">49 minutes ago</abbr></a>
+</div>
+</li>
+<li id="thread-62958" class="visible  " data-author="MelodicRose">
+<a href="members/9548/" class="avatar Av9548s" data-avatarhtml="true"><img src="data/avatars/s/9/9548.jpg?1463641931" width="48" height="48" alt="MelodicRose"></a>
+<div class="title">
+<a href="threads/62958/" title="" class="PreviewTooltip" data-previewurl="threads/62958/preview">The End</a>
+</div>
+<div class="muted">
+<a href="members/1063/">MrKizza</a> @
+<a class="dateTime"><abbr class="DateTime" data-time="1463745106" data-diff="2683" data-datestring="May 20, 2016" data-timestring="6:51 AM" title="May 20, 2016 at 6:51 AM">49 minutes ago</abbr></a>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="PreviewTooltip">
+<span class="arrow"><span></span></span>
+<div class="section">
+<div class="primaryContent previewContent">
+<span class="PreviewContents">Loading...</span>
+</div>
+</div>
+</div>
+ 
+<div class="section staffOnline avatarList">
+<div class="secondaryContent">
+<h3><a href="members/?type=staff">Staff Online Now</a></h3>
+<ul>
+<li>
+<a href="members/22433/" class="avatar Av22433s" data-avatarhtml="true"><img src="data/avatars/s/22/22433.jpg?1463606497" width="48" height="48" alt="Snacky"></a>
+<a href="members/22433/" class="username" dir="auto"><span class="style5">Snacky</span></a>
+<div class="userTitle">Helper</div>
+</li>
+<li>
+<a href="members/4910/" class="avatar Av4910s" data-avatarhtml="true"><img src="data/avatars/s/4/4910.jpg?1455902199" width="48" height="48" alt="Lucy"></a>
+<a href="members/4910/" class="username" dir="auto"><span class="style4">Lucy</span></a>
+<div class="userTitle">Moderator</div>
+</li>
+<li>
+<a href="members/1465/" class="avatar Av1465s" data-avatarhtml="true"><img src="data/avatars/s/1/1465.jpg?1463079409" width="48" height="48" alt="Z-ONE"></a>
+<a href="members/1465/" class="username" dir="auto"><span class="style10">Z-ONE</span></a>
+<div class="userTitle">Administrator</div>
+</li>
+<li>
+<a href="members/6825/" class="avatar Av6825s" data-avatarhtml="true"><img src="data/avatars/s/6/6825.jpg?1456021550" width="48" height="48" alt="GloriousPanda"></a>
+<a href="members/6825/" class="username" dir="auto"><span class="style11">GloriousPanda</span></a>
+<div class="userTitle">Management</div>
+</li>
+</ul>
+</div>
+</div>
+ 
+ 
+<div class="section membersOnline userList">
+<div class="secondaryContent">
+<h3><a href="online/" title="See all online users">Members Online Now</a></h3>
+<ol class="listInline">
+<li>
+<a href="members/23074/" dir="auto" class="username">KraftTristann</a>,
+</li>
+<li>
+<a href="members/6307/" dir="auto" class="username">whyRegular</a>,
+</li>
+<li>
+<a href="members/22433/" dir="auto" class="username">Snacky</a>,
+</li>
+<li>
+<a href="members/20168/" dir="auto" class="username">Scrub</a>,
+</li>
+<li>
+<a href="members/25839/" dir="auto" class="username">Baron</a>,
+</li>
+<li>
+<a href="members/23236/" dir="auto" class="username">robloxguy7</a>,
+</li>
+<li>
+<a href="members/19008/" dir="auto" class="username">Sufficient</a>,
+</li>
+<li>
+<a href="members/4910/" dir="auto" class="username">Lucy</a>,
+</li>
+<li>
+<a href="members/22362/" dir="auto" class="username">Sans</a>,
+</li>
+<li>
+<a href="members/1465/" dir="auto" class="username">Z-ONE</a>,
+</li>
+<li>
+<a href="members/22851/" dir="auto" class="username">KikiInuyoshyy</a>,
+</li>
+<li>
+<a href="members/6825/" dir="auto" class="username">GloriousPanda</a>,
+</li>
+<li>
+<a href="members/21053/" dir="auto" class="username">Rectof</a>,
+</li>
+<li>
+<a href="members/8941/" dir="auto" class="username">ThatAce</a>,
+</li>
+<li>
+<a href="members/12646/" dir="auto" class="username">xXNinjaCreepXx</a>,
+</li>
+<li>
+<a href="members/15863/" dir="auto" class="username">Wabbits</a>,
+</li>
+<li>
+<a href="members/24759/" dir="auto" class="username">smoothaimbot</a>,
+</li>
+<li>
+<a href="members/26273/" dir="auto" class="username">Divineee</a>,
+</li>
+<li>
+<a href="members/19861/" dir="auto" class="username">Elrak</a>,
+</li>
+<li>
+<a href="members/14152/" dir="auto" class="username">BowHop</a>
+</li>
+</ol>
+<div class="footnote">
+Total: 71 (members: 23, guests: 23, robots: 25)
+</div>
+</div>
+</div>
+ 
+<div class="section avatarList">
+<div class="secondaryContent" id="statusUpdates">
+<h3>Recent Status Updates</h3>
+<ul>
+<li>
+<a href="members/1465/" class="avatar Av1465s" data-avatarhtml="true"><img src="data/avatars/s/1/1465.jpg?1463079409" width="48" height="48" alt="Z-ONE"></a>
+<a href="members/1465/" class="username" style="display: inline;"><span class="style10">Z-ONE</span></a>
+<span class="userTitle">It's not just about having a goal, it's about what you do to achieve it and make your vision a reality. (<abbr class="DateTime" data-time="1463744957" data-diff="2832" data-datestring="May 20, 2016" data-timestring="6:49 AM" title="May 20, 2016 at 6:49 AM">52 minutes ago</abbr>)</span>
+</li>
+<li>
+<a href="members/26157/" class="avatar Av26157s" data-avatarhtml="true"><img src="data/avatars/s/26/26157.jpg?1463305273" width="48" height="48" alt="QueenMikayla"></a>
+<a href="members/26157/" class="username" style="display: inline;"><span class="style12">QueenMikayla</span></a>
+<span class="userTitle">Goodnighttttttttt &lt;3 (<abbr class="DateTime" data-time="1463743943" data-diff="3846" data-datestring="May 20, 2016" data-timestring="6:32 AM" title="May 20, 2016 at 6:32 AM">Today at 6:32 AM</abbr>)</span>
+</li>
+<li>
+<a href="members/20506/" class="avatar Av20506s" data-avatarhtml="true"><img src="data/avatars/s/20/20506.jpg?1463560891" width="48" height="48" alt="Mia"></a>
+<a href="members/20506/" class="username" style="display: inline;">Mia</a>
+<span class="userTitle">RIP November 2015 wave. @[21575:@Ashlee] @[9548:@MelodicRose] @[8243:@Porridge33] @[21214:@Domestic_Beast] @[13243:@TheLoneWulf1] . Even though, GG George:) (<abbr class="DateTime" data-time="1463730005" data-diff="17784" data-datestring="May 20, 2016" data-timestring="2:40 AM" title="May 20, 2016 at 2:40 AM">Today at 2:40 AM</abbr>)</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="secondaryContent statsList" id="boardStats">
+<h3>Forum Statistics</h3>
+<div class="pairsJustified">
+<dl class="discussionCount"><dt>Discussions:</dt>
+<dd>50,479</dd></dl>
+<dl class="messageCount"><dt>Messages:</dt>
+<dd>745,850</dd></dl>
+<dl class="memberCount"><dt>Members:</dt>
+<dd>22,507</dd></dl>
+<dl class="mostCount"><dt>User Record:</dt>
+<dd class="Tooltip">1,968</dd></dl>
+<dl><dt>Latest Member:</dt>
+<dd><a href="members/26296/" class="username" dir="auto" text="rich">Donutmaster356</a></dd></dl>
+ 
+</div>
+</div>
+</div>
+<div class="section sectionMain widget-group-no-name widget-container">
+<div class=" widget NixFifty_TeamSpeak_WidgetRenderer_ServerView non-sidebar-widget" id="widget-12">
+<h3>
+TeamSpeak
+</h3>
+<table cellpadding="1" cellspacing="12" class="ts3table">
+<tbody>
+<tr>
+<td width="50%" valign="top" class="bg">
+<div style="float:left"><b><span class="ts3head"><img src="./styles/default/nixfifty/teamspeak/serverimg.png" alt="" title="">&nbsp;[Protected] Desteria Teamspeak</span>
+</b></div>
+<div style="float:right"><b>4/1024</b></div>
+<br style="clear:both">
+<div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Welcome to the Desteria TS!</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Lobby - Choose a channel!</div>
+<div class="ts3ca" style="float:right;"><img src="./styles/default/nixfifty/teamspeak/home.png" alt="home.png" title=""></div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Community Lounge</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Public Lounge</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Other Games</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">AFK Channel</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Realm Channels</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Aelin Realm</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Calen Realm</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Drego Realm</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div><div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/client_player.png" alt="client_player.png"></div><div class="ts3na">Crown</div><div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Edain Realm</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Evala Realm</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Glora Realm</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Kyela Realm</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Zelah Realm</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">FFA Realm</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Events Realm</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Support Channels</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Join here for assistance!</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div><div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/client_player.png" alt="client_player.png"></div><div class="ts3na">bob</div><div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Support Lobby [ 1 ]</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Support Lobby [ 2 ]</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Support Lobby [ 3 ]</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Staff Departments</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Staff Lounges</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Lounge [ 1 ]</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Lounge [ 2 ]</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Administration</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Conference [ 1 ]</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Conference [ 2 ]</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">User Channels</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Instructions - Read Description</div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div>
+<div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/channel_locked.png" alt="channel.png" title=""></div>
+<div class="ts3ca">Eh..</div>
+<div class="ts3ca" style="float:right;"><img src="./styles/default/nixfifty/teamspeak/locked.png" alt="locked.png" title="locked"></div>
+<div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div><div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/client_player.png" alt="client_player.png"></div><div class="ts3na">Snacky</div><div style="clear:both"></div>
+<div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div><div class="ts3leer">&nbsp;</div><div class="ts3ca"><img src="./styles/default/nixfifty/teamspeak/client_flag_talking.png" alt="client_flag_talking.png"></div><div class="ts3na">KikiInuyoshyy</div><div class="ts3ca" style="float:right"><img src="./styles/default/nixfifty/teamspeak/client_ca.png" title="Channeladmin" alt=""></div>
+<div style="clear:both"></div>
+</td>
+</tr>
+</tbody>
+</table>
+<a href="ts3server://ts.desteria.com:9987" class="callToAction" style="width:100%;margin-top:5px;"><span style="text-align:center;">Join Server</span></a>
+</div>
+</div>
+</div>
+</aside>
+<div class="breadBoxBottom">
+<nav>
+<fieldset class="breadcrumb" style="">
+<a href="misc/quick-navigation-menu?selected=portal" class="OverlayTrigger jumpMenuTrigger" data-cacheoverlay="true" title="Open quick navigation"> </a>
+<div class="boardTitle"><strong></strong></div>
+<span class="crumbs">
+<span class="crust selectedTabCrumb">
+<a href="http://desteria.com/community/" class="crumb"><span>Home</span></a>
+<span class="arrow"><span>&gt;</span></span>
+</span>
+</span>
+</fieldset>
+</nav></div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="footer">
+<div class="pageWidth">
+<div class="pageContent">
+<ul class="footerLinks">
+<li><a href="help/terms">Terms and Rules</a></li>
+<li><a href="misc/contact" class="OverlayTrigger" data-overlayoptions="{&quot;fixed&quot;:false}">Contact Us</a></li>
+<li><a href="help/">Help</a></li>
+<li><a href="http://desteria.com/community/" class="homeLink">Home</a></li>
+<li><a href="/community/#navigation" class="topLink">Top</a></li>
+<li><a href="forums/-/index.rss" rel="alternate" class="globalFeed" target="_blank" title="RSS feed for ">RSS</a></li>
+</ul>
+<span class="helper"></span>
+</div>
+</div>
+</div>
+<div class="footerLegal">
+<div class="pageWidth">
+<div class="pageContent">
+<div id="copyright">
+<a href="https://xenforo.com" class="concealed">Forum software by XenForo™ <span>©2010-2016 XenForo Ltd.</span></a>
+<br>An <a href="http://www.audentio.com" rel="nofollow" title="XenForo themes">Audentio Design</a> design creation.
+</div>
+<span class="helper"></span>
+</div>
+</div>
+</div>
+</footer>
+<script id="twitter-wjs" src="http://platform.twitter.com/widgets.js"></script><script async="" src="//rum-static.pingdom.net/prum.min.js"></script><script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "WebSite",
+	"url": "http://desteria.com/community/",
+	"potentialAction": {
+		"@type": "SearchAction",
+		"target": "http://desteria.com/community/search/search?keywords={search_keywords}",
+		"query-input": "required name=search_keywords"
+	}
+}
+</script>
+<script type="text/javascript">
+			var _b = document.getElementsByTagName('base')[0], _bH = "http://desteria.com/community/";
+			if (_b && _b.href != _bH) _b.href = _bH;
+		</script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript">if (!window.jQuery) { document.write('<scr'+'ipt type="text/javascript" src="js/jquery/jquery-1.11.0.min.js"><\/scr'+'ipt>'); }</script>
+<script type="text/javascript" src="js/xenforo/xenforo.js?_v=78f94c0a"></script>
+<script type="text/javascript">
+var _prum = [['id', '566f70e7abe53d205871ef72'],
+             ['mark', 'firstbyte', (new Date()).getTime()]];
+(function() {
+    var s = document.getElementsByTagName('script')[0]
+      , p = document.createElement('script');
+    p.async = 'async';
+    p.src = '//rum-static.pingdom.net/prum.min.js';
+    s.parentNode.insertBefore(p, s);
+})();
+</script>
+<script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script type="text/javascript">
+
+
+jQuery.extend(true, XenForo,
+{
+	visitor: { user_id: 0 },
+	serverTimeInfo:
+	{
+		now: 1463747789,
+		today: 1463720400,
+		todayDow: 5
+	},
+	_lightBoxUniversal: "0",
+	_enableOverlays: "1",
+	_animationSpeedMultiplier: "1",
+	_overlayConfig:
+	{
+		top: "10%",
+		speed: 200,
+		closeSpeed: 100,
+		mask:
+		{
+			color: "rgb(0, 0, 0)",
+			opacity: "0.75",
+			loadSpeed: 200,
+			closeSpeed: 100
+		}
+	},
+	_ignoredUsers: [],
+	_loadedScripts: {"EWRporta":true,"message_user_info":true,"bb_code":true,"EWRblock_RecentNews":true,"discussion_list":true,"EWRblock_RecentThreads":true,"EWRblock_StatusUpdates":true,"login_bar":true,"nts_teamspeak_viewer":true,"wf_default":true},
+	_cookieConfig: { path: "/", domain: "", prefix: "xf_"},
+	_csrfToken: "",
+	_csrfRefreshUrl: "login/csrf-token-refresh",
+	_jsVersion: "78f94c0a",
+	_noRtnProtect: false,
+	_noSocialLogin: false
+});
+jQuery.extend(XenForo.phrases,
+{
+	cancel: "Cancel",
+
+	a_moment_ago:    "A moment ago",
+	one_minute_ago:  "1 minute ago",
+	x_minutes_ago:   "%minutes% minutes ago",
+	today_at_x:      "Today at %time%",
+	yesterday_at_x:  "Yesterday at %time%",
+	day_x_at_time_y: "%day% at %time%",
+
+	day0: "Sunday",
+	day1: "Monday",
+	day2: "Tuesday",
+	day3: "Wednesday",
+	day4: "Thursday",
+	day5: "Friday",
+	day6: "Saturday",
+
+	_months: "January,February,March,April,May,June,July,August,September,October,November,December",
+	_daysShort: "Sun,Mon,Tue,Wed,Thu,Fri,Sat",
+
+	following_error_occurred: "The following error occurred",
+	server_did_not_respond_in_time_try_again: "The server did not respond in time. Please try again.",
+	logging_in: "Logging in",
+	click_image_show_full_size_version: "Click this image to show the full-size version.",
+	show_hidden_content_by_x: "Show hidden content by {names}"
+});
+
+// Facebook Javascript SDK
+XenForo.Facebook.appId = "";
+XenForo.Facebook.forceInit = false;
+
+
+</script>
+<script>XenForo.serverTimeInfo.now = 1463748082;XenForo.serverTimeInfo.today = 1463720400;XenForo.serverTimeInfo.todayDow = 5;</script>
+<div id="calroot" style="display: none; position: absolute;"><div id="calhead"><a id="calprev">←</a><div id="caltitle"></div><a id="calnext">→</a></div><div id="calbody"><div id="caldays"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div><div id="calweeks"></div></div></div><div class="Menu JsOnly tabMenu forumsTabLinks" id="XenForoUniq0">
+<div class="primaryContent menuHeader">
+<h3>Forums</h3>
+<div class="muted">Quick Links</div>
+</div>
+<ul class="secondaryContent blockLinksList">
+<li><a href="search/?type=post">Search Forums</a></li>
+<li><a href="find-new/posts" rel="nofollow">Recent Posts</a></li>
+</ul>
+</div><div class="Menu JsOnly tabMenu xfx_staffTabLinks" id="XenForoUniq1">
+<div class="primaryContent menuHeader">
+<h3>Staff</h3>
+<div class="muted">Quick Links</div>
+</div>
+<ul class="secondaryContent blockLinksList">
+<li><a href="XenStaff/#Server Owner">Server Owner</a></li>
+<li><a href="XenStaff/#Moderator">Moderator</a></li>
+<li><a href="XenStaff/#Helper">Helper</a></li>
+<li><a href="XenStaff/#Administrator">Administrator</a></li>
+<li><a href="XenStaff/#Management">Management</a></li>
+<li><a href="XenStaff/#Developer">Developer</a></li>
+</ul>
+</div><div class="Menu JsOnly blockLinksList primaryContent" id="NavigationHiddenMenu"></div><div class="Menu" id="XenForoUniq2">
+<div class="primaryContent menuHeader">
+<h3>Useful Searches</h3>
+</div>
+<ul class="secondaryContent blockLinksList">
+ 
+<li><a href="find-new/posts?recent=1" rel="nofollow">Recent Posts</a></li>
+ 
+</ul>
+</div>
 	
 		<footer>
     		<ul>
