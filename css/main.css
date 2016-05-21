@@ -45,8 +45,8 @@ p {
     color: #333;
     font-family: 'Raleway', sans-serif;
 }
-footer {
-    border-top: 1px solid #d5d5d5;
+.top footer {
+    border-bottom: 1px solid #d5d5d5;
     font-size: .8em;
 }
 
