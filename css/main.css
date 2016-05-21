@@ -66,6 +66,7 @@ ul.posts li {
     -webkit-appearance: button;
     appearance: button;
     text-decoration: none;
-    color: #000;
+    color: #999;
     padding: 0.2em 0.4em;
+    font-family: 'Raleway', 'Arial', sans-serif;
 }​
