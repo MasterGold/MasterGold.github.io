@@ -36,6 +36,11 @@ h2 {
     color:blue;
     font-family:"Comic Sans MS", cursive, sans-serif
 }
+pre {
+    font-size: 2em;
+    color:blue;
+    font-family:"Comic Sans MS", cursive, sans-serif        
+}
 h3 {
     font-size: 1em;
     
