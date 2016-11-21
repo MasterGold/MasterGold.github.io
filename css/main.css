@@ -11,13 +11,13 @@ nav ul, footer ul {
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
-
+}
 .inlineList li {
     display: inline;
     margin-left: 20px;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
-}
+
 a {
     text-decoration: none;
     color: #999;
@@ -44,7 +44,7 @@ pre {
 h3 {
     font-size: 1em;
     
-    font-family: 'Raleway', 'Arial', sans-serif;
+    font-family:"Comic Sans MS", cursive, sans-serif 
 }
 p {
     font-size: 1.5em;
